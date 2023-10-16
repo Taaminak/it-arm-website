@@ -1,0 +1,184 @@
+.main_section {
+    .menu_icon {
+        inset-inline-end: 15px;
+    }
+
+    .sky_logo {
+        top: -30px;
+
+        .sky_layer {
+            top: 60px;
+            z-index: 0;
+            width: 100%;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    .video_box {
+        width: 350px;
+        height: 500px;
+        max-width: 97%;
+
+        .video {
+            overflow: hidden;
+            border-radius: 100px 10px 100px 10px;
+            width: 350px;
+            height: 500px;
+            z-index: 2;
+            max-width: 97%;
+
+            &::before {
+                position: absolute;
+                content: '';
+                z-index: 1;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                @include transparency($primaryColor, .20);
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            z-index: 1;
+            top: 20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            @include transparency($primaryColor, .20);
+            border: 2px dashed var(--primaryColor);
+            border-radius: 100px 10px 100px 10px;
+        }
+    }
+}
+
+.main_services__icons {
+    .service_icon {
+        position: relative;
+        a{
+            display: block;
+            min-height: 60px;
+        }
+        &:hover, &.active {
+            .service_title {
+                opacity: 1;
+                @extend .primary_color;
+            }
+
+            img {
+                @extend .primary_color__filter;
+            }
+        }
+        &:hover{
+                z-index: 2 !important;
+        }
+
+        .service_title {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            word-break: keep-all;
+            display: block;
+            min-width: 400px;
+            opacity: 0;
+            @extend %transition;
+            background-color: var(--white);
+            z-index: 1;
+        }
+    }
+}
+
+.about_section {
+    border-radius: 100px 0 100px 0;
+
+    &::before {
+        @include absolute-position(-150px, 0, 150px, 150px);
+        background: url('../img/radius-angle.svg') no-repeat bottom;
+        background-size: 100%;
+    }
+
+    &::after {
+        @include absolute-position(100%, calc(100% - 150px), 150px, 150px);
+        background: url('../img/radius-angle.svg') no-repeat bottom;
+        background-size: 100%;
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+
+.oddo_is{
+    margin-top: 100px;
+}
+
+.management_boxes{
+    .management_box{
+        border: 1px solid var(--primaryColor);
+        @extend .border_radius__30, %transition;
+        height: 100%;
+        &:hover{
+            box-shadow: 0 0 20px 2px rgba($primaryColor, .6);
+        }
+    }
+}
+
+.selling_management{
+    margin-bottom: 100px;
+    &::before{
+        top: -100px !important;
+    }
+}
+
+.about_realstate{
+    border-radius: 100px 0 0 100px;
+}
+.about_mobile__apps{
+    border-radius: 0 100px 100px 0;
+}
+
+.realstate_features{
+    .sided_curve__left{
+        &::before{
+            top: 1000px;
+        }
+    }
+    .management_boxes{
+        .management_box{
+            border-width: 0;
+        }
+    }
+}
+
+.contact_sky__bg{
+    background: url('../img/sky.svg') no-repeat top left;
+}
+
+.about_us{
+    background-image: url('../img/laptop.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: top 49px left 31%;
+}
+
+.contact_form{
+    $radius: 70px 8px 70px 8px;
+    border: 2px dashed var(--primaryColor);
+    border-radius: $radius;
+    z-index: 10;
+    .right_side{
+        border-radius: $radius;
+    }
+}
+
+#particles-js{
+    .particles-js-canvas-el{
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0;
+        left:0;
+        top:0;
+    }
+}
