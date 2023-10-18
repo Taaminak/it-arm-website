@@ -86,7 +86,7 @@
             min-width: 400px;
             opacity: 0;
             @extend %transition;
-            background-color: var(--white);
+            // background-color: var(--white);
             z-index: 1;
         }
     }

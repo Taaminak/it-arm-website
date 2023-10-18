@@ -22,6 +22,13 @@ $(document).ready(function () {
         }, 2000)
     })
 
+    $('.service_icon').on('mouseover', function(){
+        $(this).siblings('.service_icon').find('.service_title').fadeOut();
+    })
+    $('.service_icon').on('mouseout', function(){
+        $(this).siblings('.service_icon').find('.service_title').fadeIn();
+    })
+
 
 });
 
