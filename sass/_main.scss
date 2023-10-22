@@ -172,7 +172,7 @@
     }
 }
 
-#particles-js{
+*[id*="particles-js"]{
     .particles-js-canvas-el{
         position: absolute;
         width: 100% !important;
