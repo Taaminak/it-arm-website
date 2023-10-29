@@ -152,7 +152,7 @@ particlesJS.load('particles-js', jsonUri, function(){
 const partJson1 = {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -165,7 +165,7 @@ const partJson1 = {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#efefef"
       },
       "polygon": {
         "nb_sides": 5
@@ -177,7 +177,7 @@ const partJson1 = {
       }
     },
     "opacity": {
-      "value": 1,
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
@@ -187,7 +187,7 @@ const partJson1 = {
       }
     },
     "size": {
-      "value": 7,
+      "value": 20,
       "random": true,
       "anim": {
         "enable": true,
@@ -199,9 +199,9 @@ const partJson1 = {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "color": "#efefef",
+      "opacity": 0.5,
+      "width": 3
     },
     "move": {
       "enable": true,
