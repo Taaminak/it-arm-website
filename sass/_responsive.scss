@@ -30,6 +30,13 @@
             inset-inline-start: -60px;
         }
     }
+
+    navbar{
+        #navbar_close__icon{
+            inset-inline-start: -60px;
+            position: relative;
+        }
+    }
 }
 
 @media (min-width: $breakpoint-lg) {
