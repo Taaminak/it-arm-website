@@ -261,7 +261,7 @@ const partJson1 = {
 }
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-var jsonUri = "data:text/plain;base64," + window.btoa(JSON.stringify(partJson1));
-particlesJS.load('particles-js-1', jsonUri, function(){
-    console.log('loaded successfully')
-});
+// var jsonUri = "data:text/plain;base64," + window.btoa(JSON.stringify(partJson1));
+// particlesJS.load('particles-js-1', jsonUri, function(){
+//     console.log('loaded successfully')
+// });
