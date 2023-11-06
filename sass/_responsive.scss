@@ -32,6 +32,9 @@
             font-size: #{$i * 4.2}px;
         }
     }
+    .container{
+        max-width: 73% !important;
+    }
 }
 
 @media (min-width: $breakpoint-xl) {

@@ -1,7 +1,7 @@
 navbar{
     @include transparency($primaryColor, .9);
     height: 90%;
-    overflow-y: auto;
+    overflow-y: hidden;
     z-index: 1000;
     top:-100%;
     &.navbar_open{
