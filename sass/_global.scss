@@ -25,6 +25,9 @@ body {
 
 a {
     text-decoration: none !important;
+    &:hover{
+        color: var(--secondaryColor)
+    }
 }
 
 ul{
@@ -85,6 +88,9 @@ textarea {
     @extend %transition;
 }
 
+.z_index__3{
+    z-index: 3;
+}
 
 
 @for $i from 1 through 10 {
